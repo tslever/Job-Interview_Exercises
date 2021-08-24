@@ -1,0 +1,5 @@
+package lattice_utilities;
+
+public class MooreNeighborhood {
+
+}

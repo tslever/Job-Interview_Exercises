@@ -1,0 +1,19 @@
+package neighbor_counting_utilities;
+
+public class Data {
+	
+	private int heightOfWorld;
+	private int widthOfWorld;
+	private int numberOfSettlers;
+	private int range;
+	
+	public Data(int[] heightWidthNumberOfSettlersAndRange) {
+		
+		this.heightOfWorld = heightWidthNumberOfSettlersAndRange[0];
+		this.widthOfWorld = heightWidthNumberOfSettlersAndRange[1];
+		this.numberOfSettlers = heightWidthNumberOfSettlersAndRange[2];
+		this.range = heightWidthNumberOfSettlersAndRange[3];
+		
+	}
+
+}

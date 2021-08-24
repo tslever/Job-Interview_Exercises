@@ -1,0 +1,154 @@
+package lattice_utilities;
+
+
+import settler_utilities.Location;
+
+
+public class VonNeumannNeighborhood extends FarmingPattern {
+
+	
+	public VonNeumannNeighborhood(int range) {
+		
+		super(range);
+		
+		fillCells();
+		
+	}
+	
+	
+	protected void fillCells() {
+		
+		int j;
+		for (int i = 0; i < this.height; i++) {
+			
+			for (j = Math.abs(i - this.range); j < this.width - Math.abs(i - this.range); j++) {
+				
+				setCellIdentifiedBy(i, j);
+				
+			}
+			
+		}
+		
+	}
+	
+	
+	public World applyTo(World world, Location location) {
+		
+		if (!world.wrapsVertically() && !world.wrapsHorizontally()) {
+			world = byUsingMethodForWhenWorldWrapsNeitherVerticallyNorHorizontally(World world, Location location);
+		}
+		
+		
+		/*int j;
+		
+		for (int i = Math.max(0, location.row() - this.range); i < Math.min(world.height(), location.row() + this.range + 1); i++) {
+			
+			for (j = Math.max(0, location.column() - this.range + Math.abs(i - location.row())); j < Math.min(world.width(), location.column() + this.range - Math.abs(i - location.row()) + 1); j++) {
+				
+				world.setCellIdentifiedBy(i, j);
+				
+			}
+			
+		}*/
+		
+		
+		/*int j;
+		int column;
+		
+		for (int i = Math.max(0, location.row() - this.range); i < Math.min(world.height(), location.row() + this.range + 1); i++) {
+			
+			for (j = location.column() - this.range + Math.abs(i - location.row()); j < location.column() + this.range - Math.abs(i - location.row()) + 1; j++) {
+				
+				column = j;
+				if (column < 0) {
+					column = world.width() + (column % world.width());
+				}
+				else if (column >= world.width()) {
+					column = column % world.width();
+				}
+				
+				world.setCellIdentifiedBy(i, column);
+				
+			}
+			
+		}*/
+		
+		
+		int j;
+		int row;
+		
+		for (int i = location.row() - this.range; i < location.row() + this.range + 1; i++) {
+			
+			for (j = Math.max(0, location.column() - this.range + Math.abs(i - location.row())); j < Math.min(world.width(), location.column() + this.range - Math.abs(i - location.row()) + 1); j++) {
+				
+				row = i;
+				if (row < 0) {
+					row = world.height() + (row % world.height());
+				}
+				else if (row >= world.height()) {
+					row = row % world.height();
+				}
+				
+				world.setCellIdentifiedBy(row, j);
+				
+			}
+			
+		}
+		
+		
+		/*int j;
+		int row;
+		int column;
+		
+		for (int i = location.row() - this.range; i < location.row() + this.range + 1; i++) {
+			
+			for (j = location.column() - this.range + Math.abs(i - location.row()); j < location.column() + this.range - Math.abs(i - location.row()) + 1; j++) {
+				
+				row = i;
+				if (row < 0) {
+					row = world.height() + (row % world.height());
+				}
+				else if (row >= world.height()) {
+					row = row % world.height();
+				}
+				
+				column = j;
+				if (column < 0) {
+					column = world.width() + (column % world.width());
+				}
+				else if (column >= world.width()) {
+					column = column % world.width();
+				}
+				
+				world.setCellIdentifiedBy(row, column);
+				
+			}
+			
+		}*/
+		
+		
+		return world;
+		
+	}
+	
+	
+	private World byUsingMethodForWhenWorldWrapsNeitherVerticallyNorHorizontally(World world, Location location) {
+		
+		int j;
+		
+		for (int i = Math.max(0, location.row() - this.range); i < Math.min(world.height(), location.row() + this.range + 1); i++) {
+			
+			for (j = Math.max(0, location.column() - this.range + Math.abs(i - location.row())); j < Math.min(world.width(), location.column() + this.range - Math.abs(i - location.row()) + 1); j++) {
+				
+				world.setCellIdentifiedBy(i, j);
+				
+			}
+			
+		}
+		
+		return world;
+		
+	}
+	
+	
+}

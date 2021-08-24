@@ -1,0 +1,21 @@
+package lattice_utilities;
+
+
+public class World extends Lattice {
+
+	
+	private boolean wrapsVertically;
+	private boolean wrapsHorizontally;
+	
+	
+	public World(int heightToUse, int widthToUse) {
+		
+		super(heightToUse, widthToUse);
+		
+		wrapsVertically = (heightToUse < 3) ? true : false;
+		
+		wrapsHorizontally = (heightToUse < 3) ? true : false;
+		
+	}
+	
+}

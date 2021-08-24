@@ -1,0 +1,50 @@
+package neighbor_counting_utilities;
+
+
+import lattice_utilities.VonNeumannNeighborhood;
+import lattice_utilities.World;
+import settler_utilities.Settlers;
+
+
+public class NeighborCounter {
+
+	public static void main(String[] args)
+		throws AssertEqualsException,
+		   NumberFormatException,
+		   HeightOfWorldLessThanOneException,
+		   WidthOfWorldLessThanOneException,
+		   AreaOfWorldTooHighException,
+		   UnrealisticNumberOfSettlersException,
+		   RangeOfVonNeumannNeighborhoodLessThanZeroException {
+
+		int[] heightWidthNumberOfSettlersAndRange = InputParser.heightWidthNumberOfSettlersAndRangeBasedOn(args);
+		int heightOfWorld = heightWidthNumberOfSettlersAndRange[0];
+		int widthOfWorld = heightWidthNumberOfSettlersAndRange[1];
+		int numberOfSettlers = heightWidthNumberOfSettlersAndRange[2];
+		int rangeOfVonNeumannNeighborhood = heightWidthNumberOfSettlersAndRange[3];
+		
+		World world = new World(heightOfWorld, widthOfWorld);
+		
+		Settlers settlers = Settlers.organizeBasedOn(world, numberOfSettlers);
+		
+		world = settlers.settleIndividualCellsOf(world);
+		
+		System.out.println("Settled World:");
+		world.display();
+		
+		VonNeumannNeighborhood vonNeumannNeighborhood = new VonNeumannNeighborhood(rangeOfVonNeumannNeighborhood);
+		
+		System.out.println("Farming Pattern:");
+		vonNeumannNeighborhood.display();
+		
+		world = settlers.farm(world, vonNeumannNeighborhood);
+		
+		System.out.println("Farmed World:");
+		world.display();
+		
+		System.out.println("Number of Cells Farmed:");
+		
+
+	}
+
+}

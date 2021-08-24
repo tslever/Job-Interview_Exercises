@@ -1,0 +1,53 @@
+package lattice_utilities;
+
+
+public class World extends Lattice {
+
+	
+	private boolean wrapsVertically;
+	private boolean wrapsHorizontally;
+	private int numberOfCellsFarmed;
+	
+	
+	public World(int heightToUse, int widthToUse) {
+		
+		super(heightToUse, widthToUse);
+		
+		this.wrapsVertically = (heightToUse < 3) ? true : false;
+		
+		this.wrapsHorizontally = (heightToUse < 3) ? true : false;
+		
+		this.numberOfCellsFarmed = 0;
+		
+	}
+	
+	
+	public boolean wrapsVertically() {
+		
+		return this.wrapsVertically;
+		
+	}
+	
+	
+	public boolean wrapsHorizontally() {
+		
+		return this.wrapsHorizontally;
+		
+	}
+	
+	
+	public void incrementNumberOfCellsFarmed() {
+		
+		this.numberOfCellsFarmed = this.numberOfCellsFarmed + 1;
+		
+	}
+	
+	
+	public int numberOfCellsFarmed() {
+		
+		return this.numberOfCellsFarmed;
+		
+	}
+	
+	
+}

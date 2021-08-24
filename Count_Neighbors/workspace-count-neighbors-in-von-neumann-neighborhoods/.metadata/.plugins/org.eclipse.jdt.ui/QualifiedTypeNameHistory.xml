@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="world_utilities.World"/>
+    <fullyQualifiedTypeName name="lattice_utilities.VonNeumannNeighborhood"/>
+    <fullyQualifiedTypeName name="settler_utilities.Location"/>
+    <fullyQualifiedTypeName name="lattice_utilities.World"/>
+    <fullyQualifiedTypeName name="lattice_utilities.FarmingPattern"/>
+</qualifiedTypeNameHistroy>

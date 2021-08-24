@@ -1,0 +1,9 @@
+package design_classes;
+
+
+/*
+ * IO
+ */
+public class IoManager {
+
+}

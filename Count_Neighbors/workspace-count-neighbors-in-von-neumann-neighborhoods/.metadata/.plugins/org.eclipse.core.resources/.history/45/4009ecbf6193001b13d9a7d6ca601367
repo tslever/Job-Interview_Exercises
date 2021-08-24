@@ -1,0 +1,55 @@
+package neighbor_counting_utilities;
+
+import java.util.Scanner;
+import lattice_utilities.World;
+
+public class IoManager {
+	
+	
+	public static void displayIntroduction(
+		int heightOfWorld, int widthOfWorld, int numberOfSettlers, int rangeOfVonNeumannNeighborhood) {
+		
+		System.out.println(
+			"You seek to count neighbors in von-Neumann neighborhoods when\n" +
+			"von-Neumann neighborhoods are randomly placed in a world of cells with\n" +
+			"a height of " + heightOfWorld + " cells and a width of " + widthOfWorld + " cells.\n" +
+			"There are " + numberOfSettlers + " von-Neumann neighborhoods.\n" +
+			"Each von-Neumann neighborhood has a range of " + rangeOfVonNeumannNeighborhood + ". Alternatively,\n\n" +
+			
+			"You seek to count cells settled or farmed in a world of cells with\n" +
+			"a height of " + heightOfWorld + " cells and a width of " + widthOfWorld + " cells.\n" +
+			"The world is settled by " + numberOfSettlers + " settlers.\n" +
+			"Each settler farms the land around him or her in a von-Neumann pattern\n" +
+			"of range " + rangeOfVonNeumannNeighborhood + ".\n\n"
+		);
+		
+	}
+	
+	
+	public static void askAboutAndPossiblyDisplaySettledWorld(World world) {
+
+		Scanner scanner = new Scanner(System.in);
+		
+		String answer = "";
+		
+		while (!answer.equals("y") && !answer.equals("n")) {
+			
+			System.out.print("Display settled world (y/n)? ");
+		
+			answer = scanner.nextLine();
+			
+		}
+		
+		if (answer.equals("y")) {
+
+			System.out.println("\nSettled World:\n");
+
+			world.display();
+			
+			System.out.println();
+			
+		}
+		
+	}
+	
+}
