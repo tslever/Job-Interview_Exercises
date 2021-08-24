@@ -1,0 +1,7 @@
+C:\Users\Tom\source\repos\ArrayRotatorAndElementProvider\ArrayRotatorAndElementProvider\bin\Debug\ArrayRotatorAndElementProvider.exe.config
+C:\Users\Tom\source\repos\ArrayRotatorAndElementProvider\ArrayRotatorAndElementProvider\bin\Debug\ArrayRotatorAndElementProvider.exe
+C:\Users\Tom\source\repos\ArrayRotatorAndElementProvider\ArrayRotatorAndElementProvider\bin\Debug\ArrayRotatorAndElementProvider.pdb
+C:\Users\Tom\source\repos\ArrayRotatorAndElementProvider\ArrayRotatorAndElementProvider\obj\Debug\ArrayRotatorAndElementProvider.csproj.AssemblyReference.cache
+C:\Users\Tom\source\repos\ArrayRotatorAndElementProvider\ArrayRotatorAndElementProvider\obj\Debug\ArrayRotatorAndElementProvider.csproj.CoreCompileInputs.cache
+C:\Users\Tom\source\repos\ArrayRotatorAndElementProvider\ArrayRotatorAndElementProvider\obj\Debug\ArrayRotatorAndElementProvider.exe
+C:\Users\Tom\source\repos\ArrayRotatorAndElementProvider\ArrayRotatorAndElementProvider\obj\Debug\ArrayRotatorAndElementProvider.pdb

@@ -1,0 +1,7 @@
+C:\Users\Tom\source\repos\DecimalToBinaryConverter\DecimalToBinaryConverter\bin\Debug\DecimalToBinaryConverter.exe.config
+C:\Users\Tom\source\repos\DecimalToBinaryConverter\DecimalToBinaryConverter\bin\Debug\DecimalToBinaryConverter.exe
+C:\Users\Tom\source\repos\DecimalToBinaryConverter\DecimalToBinaryConverter\bin\Debug\DecimalToBinaryConverter.pdb
+C:\Users\Tom\source\repos\DecimalToBinaryConverter\DecimalToBinaryConverter\obj\Debug\DecimalToBinaryConverter.csproj.AssemblyReference.cache
+C:\Users\Tom\source\repos\DecimalToBinaryConverter\DecimalToBinaryConverter\obj\Debug\DecimalToBinaryConverter.csproj.CoreCompileInputs.cache
+C:\Users\Tom\source\repos\DecimalToBinaryConverter\DecimalToBinaryConverter\obj\Debug\DecimalToBinaryConverter.exe
+C:\Users\Tom\source\repos\DecimalToBinaryConverter\DecimalToBinaryConverter\obj\Debug\DecimalToBinaryConverter.pdb
