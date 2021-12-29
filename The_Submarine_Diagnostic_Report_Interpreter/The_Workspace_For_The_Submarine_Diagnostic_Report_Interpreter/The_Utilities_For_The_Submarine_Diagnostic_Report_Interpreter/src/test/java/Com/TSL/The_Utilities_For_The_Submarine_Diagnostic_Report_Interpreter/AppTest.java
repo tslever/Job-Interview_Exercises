@@ -1,4 +1,4 @@
-package Com.TSL.Utilities_For_The_Power_Consumption_Interpreter;
+package Com.TSL.The_Utilities_For_The_Submarine_Diagnostic_Report_Interpreter;
 
 import static org.junit.Assert.assertTrue;
 

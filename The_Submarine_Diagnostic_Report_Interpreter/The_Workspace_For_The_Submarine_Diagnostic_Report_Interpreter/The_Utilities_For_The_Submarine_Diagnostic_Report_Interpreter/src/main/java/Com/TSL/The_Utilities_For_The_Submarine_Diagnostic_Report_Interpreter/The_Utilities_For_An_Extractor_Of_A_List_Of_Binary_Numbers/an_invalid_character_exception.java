@@ -1,4 +1,4 @@
-package Com.TSL.Utilities_For_The_Power_Consumption_Interpreter.Utilities_For_A_Binary_Numbers_Processor;
+package Com.TSL.The_Utilities_For_The_Submarine_Diagnostic_Report_Interpreter.The_Utilities_For_An_Extractor_Of_A_List_Of_Binary_Numbers;
 
 
 /**

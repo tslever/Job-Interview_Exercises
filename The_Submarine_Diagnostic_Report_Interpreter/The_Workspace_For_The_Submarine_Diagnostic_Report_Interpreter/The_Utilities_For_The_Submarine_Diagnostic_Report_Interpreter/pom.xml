@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>Com.TSL</groupId>
-  <artifactId>Utilities_For_The_Power_Consumption_Interpreter</artifactId>
+  <artifactId>The_Utilities_For_The_Submarine_Diagnostic_Report_Interpreter</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>Utilities_For_The_Power_Consumption_Interpreter</name>
+  <name>The_Utilities_For_The_Submarine_Diagnostic_Report_Interpreter</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
