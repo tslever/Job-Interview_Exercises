@@ -169,6 +169,8 @@ public class a_generator_of_submarine_statistics {
     	
     	ArrayList<String> The_List_Of_Binary_Numbers = this.List_Of_Binary_Numbers;
     	
+    	//System.out.println("Carbon Dioxide Rating\n" + The_List_Of_Binary_Numbers);
+    	
     	for (int i = 0; i < this.Number_Of_Bits_In_A_Binary_Number; i++) {
     		
     		int[] The_Frequency_Of_0s_And_The_Frequency_Of_1s = this.provides_the_frequency_of_0s_and_the_frequency_of_1s_given(The_List_Of_Binary_Numbers, i);
@@ -188,6 +190,8 @@ public class a_generator_of_submarine_statistics {
             }
             
             The_List_Of_Binary_Numbers = this.provides_an_updated_list_of_binary_numbers_based_on(The_List_Of_Binary_Numbers, The_Winnowed_List_Of_Binary_Numbers);
+            
+            //System.out.println(The_List_Of_Binary_Numbers);
             
             if (The_List_Of_Binary_Numbers.size() < 2) {
                 break;
@@ -273,6 +277,8 @@ public class a_generator_of_submarine_statistics {
     	
     	ArrayList<String> The_List_Of_Binary_Numbers = this.List_Of_Binary_Numbers;
     	
+    	//System.out.println("Oxygen Generator Rating\n" + The_List_Of_Binary_Numbers);
+    	
     	for (int i = 0; i < this.Number_Of_Bits_In_A_Binary_Number; i++) {
     		
     		int[] The_Frequency_Of_0s_And_The_Frequency_Of_1s = this.provides_the_frequency_of_0s_and_the_frequency_of_1s_given(The_List_Of_Binary_Numbers, i);
@@ -292,6 +298,8 @@ public class a_generator_of_submarine_statistics {
             }
             
             The_List_Of_Binary_Numbers = this.provides_an_updated_list_of_binary_numbers_based_on(The_List_Of_Binary_Numbers, The_Winnowed_List_Of_Binary_Numbers);
+            
+            //System.out.println(The_List_Of_Binary_Numbers);
             
             if (The_List_Of_Binary_Numbers.size() < 2) {
                 break;
