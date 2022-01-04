@@ -75,7 +75,7 @@ public class an_extractor_of_a_list_of_binary_numbers {
 	 * @throws IOException
 	 */
 	
-	public ArrayList<String> extracts_a_list_of_binary_numbers_from_the_diagnostic_report_at(String The_Path_To_The_Diagnostic_Report) throws an_inconsistent_number_of_bits_exception, an_invalid_character_exception, FileNotFoundException, IOException {
+	public ArrayList<String> extracts_a_list_of_binary_numbers_from_the_diagnostic_report_at(String The_Path_To_The_Diagnostic_Report) throws a_zero_binary_numbers_exception, an_inconsistent_number_of_bits_exception, an_invalid_character_exception, FileNotFoundException, IOException {
 		
 		ArrayList<String> The_List_Of_Binary_Numbers = new ArrayList<String>();
 		
@@ -88,6 +88,8 @@ public class an_extractor_of_a_list_of_binary_numbers {
         if (The_Buffered_Reader.ready()) {
         	
         	The_Binary_Number = The_Buffered_Reader.readLine();
+        	
+        	The_List_Of_Binary_Numbers.add(The_Binary_Number);
         	
         	this.checks_the_characters_of(The_Binary_Number);
         	
@@ -108,6 +110,12 @@ public class an_extractor_of_a_list_of_binary_numbers {
         }
         
         The_Buffered_Reader.close();
+        
+        if (The_List_Of_Binary_Numbers.isEmpty()) {
+        	
+        	throw new a_zero_binary_numbers_exception("An extractor of a list of binary numbers extracted zero binary numbers.");
+        	
+        }
 		
         return The_List_Of_Binary_Numbers;
         

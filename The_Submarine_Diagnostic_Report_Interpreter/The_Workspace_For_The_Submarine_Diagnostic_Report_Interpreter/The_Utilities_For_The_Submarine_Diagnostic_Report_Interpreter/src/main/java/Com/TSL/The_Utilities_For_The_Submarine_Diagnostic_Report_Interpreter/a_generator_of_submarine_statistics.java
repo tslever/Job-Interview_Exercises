@@ -2,6 +2,7 @@ package Com.TSL.The_Utilities_For_The_Submarine_Diagnostic_Report_Interpreter;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 
 /**
@@ -79,6 +80,52 @@ public class a_generator_of_submarine_statistics {
     
     
     /**
+     * provides_a_list_containing_the_first_binary_number_in provides a list containing the first binary number in a list of binary numbers.
+     * 
+     * @param The_List_Of_Binary_Numbers
+     * @return
+     */
+    
+    public ArrayList<String> provides_a_list_containing_the_first_binary_number_in(ArrayList<String> The_List_Of_Binary_Numbers) {
+    	
+    	String The_First_Binary_Number = The_List_Of_Binary_Numbers.get(0);
+    	
+    	The_List_Of_Binary_Numbers = new ArrayList<String>(1);
+    	
+    	The_List_Of_Binary_Numbers.add(The_First_Binary_Number);
+    	
+    	return The_List_Of_Binary_Numbers;
+    	
+    }
+    
+    
+    /**
+     * provides an updated list of binary numbers based on a winnowed list of binary numbers.
+     * 
+     * @param The_Winnowed_List_Of_Binary_Numbers
+     * @return
+     */
+    
+    public ArrayList<String> provides_an_updated_list_of_binary_numbers_based_on(ArrayList<String> The_List_Of_Binary_Numbers, ArrayList<String> The_Winnowed_List_Of_Binary_Numbers) {
+    	
+        if (The_Winnowed_List_Of_Binary_Numbers.isEmpty()) {
+        	
+        	The_List_Of_Binary_Numbers = this.provides_a_list_containing_the_first_binary_number_in(The_List_Of_Binary_Numbers);
+        			
+        }
+        
+        else {
+        
+            The_List_Of_Binary_Numbers = The_Winnowed_List_Of_Binary_Numbers;
+        	
+        }
+        
+        return The_List_Of_Binary_Numbers;
+    	
+    }
+    
+    
+    /**
      * provides_the_frequency_of_0s_and_the_frequency_of_1s_given provides the frequency and 0's and the frequency of 1's given a list of binary numbers and a bit index.
      * 
      * @param The_List_Of_Binary_Numbers
@@ -140,7 +187,7 @@ public class a_generator_of_submarine_statistics {
                 
             }
             
-            The_List_Of_Binary_Numbers = The_Winnowed_List_Of_Binary_Numbers;
+            The_List_Of_Binary_Numbers = this.provides_an_updated_list_of_binary_numbers_based_on(The_List_Of_Binary_Numbers, The_Winnowed_List_Of_Binary_Numbers);
             
             if (The_List_Of_Binary_Numbers.size() < 2) {
                 break;
@@ -171,6 +218,8 @@ public class a_generator_of_submarine_statistics {
             
         }
         
+        //System.out.println("Epsilon Rate: " + Arrays.toString(The_Epsilon_Rate));
+        
         return this.converts_to_a_double(The_Epsilon_Rate);
         
     }
@@ -193,6 +242,8 @@ public class a_generator_of_submarine_statistics {
         	The_Gamma_Rate[i] = (The_Pair_Of_Frequencies[1] >= The_Pair_Of_Frequencies[0]) ? 1 : 0;
             
         }
+        
+        //System.out.println("Gamma Rate: " + Arrays.toString(The_Gamma_Rate));
         
         return this.converts_to_a_double(The_Gamma_Rate);
         
@@ -240,7 +291,7 @@ public class a_generator_of_submarine_statistics {
                 
             }
             
-            The_List_Of_Binary_Numbers = The_Winnowed_List_Of_Binary_Numbers;
+            The_List_Of_Binary_Numbers = this.provides_an_updated_list_of_binary_numbers_based_on(The_List_Of_Binary_Numbers, The_Winnowed_List_Of_Binary_Numbers);
             
             if (The_List_Of_Binary_Numbers.size() < 2) {
                 break;

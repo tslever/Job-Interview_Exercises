@@ -1,6 +1,7 @@
 package Com.TSL.The_Utilities_For_The_Submarine_Diagnostic_Report_Interpreter;
 
 
+import Com.TSL.The_Utilities_For_The_Submarine_Diagnostic_Report_Interpreter.The_Utilities_For_An_Extractor_Of_A_List_Of_Binary_Numbers.a_zero_binary_numbers_exception;
 import Com.TSL.The_Utilities_For_The_Submarine_Diagnostic_Report_Interpreter.The_Utilities_For_An_Extractor_Of_A_List_Of_Binary_Numbers.an_extractor_of_a_list_of_binary_numbers;
 import Com.TSL.The_Utilities_For_The_Submarine_Diagnostic_Report_Interpreter.The_Utilities_For_An_Extractor_Of_A_List_Of_Binary_Numbers.an_inconsistent_number_of_bits_exception;
 import Com.TSL.The_Utilities_For_The_Submarine_Diagnostic_Report_Interpreter.The_Utilities_For_An_Extractor_Of_A_List_Of_Binary_Numbers.an_invalid_character_exception;
@@ -29,7 +30,7 @@ public class The_Submarine_Diagnostic_Report_Interpreter {
      * @param args
      */
     
-    public static void main(String[] args) throws an_inconsistent_number_of_bits_exception, an_invalid_character_exception, IOException {
+    public static void main(String[] args) throws a_zero_binary_numbers_exception, an_inconsistent_number_of_bits_exception, an_invalid_character_exception, IOException {
 
         String The_Path_To_The_Diagnostic_Report = args[0];
         
