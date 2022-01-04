@@ -199,6 +199,12 @@ public class a_generator_of_submarine_statistics {
             
     	}
     	
+    	if (The_List_Of_Binary_Numbers.size() > 1) {
+    		
+    		this.provides_a_list_containing_the_first_binary_number_in(The_List_Of_Binary_Numbers);
+    		
+    	}
+    	
     	return this.converts_to_a_double(this.parses_as_a_rating(The_List_Of_Binary_Numbers.get(0)));
     	
     }
@@ -305,6 +311,12 @@ public class a_generator_of_submarine_statistics {
                 break;
             }
             
+    	}
+    	
+    	if (The_List_Of_Binary_Numbers.size() > 1) {
+    		
+    		this.provides_a_list_containing_the_first_binary_number_in(The_List_Of_Binary_Numbers);
+    		
     	}
     	
     	return this.converts_to_a_double(this.parses_as_a_rating(The_List_Of_Binary_Numbers.get(0)));
