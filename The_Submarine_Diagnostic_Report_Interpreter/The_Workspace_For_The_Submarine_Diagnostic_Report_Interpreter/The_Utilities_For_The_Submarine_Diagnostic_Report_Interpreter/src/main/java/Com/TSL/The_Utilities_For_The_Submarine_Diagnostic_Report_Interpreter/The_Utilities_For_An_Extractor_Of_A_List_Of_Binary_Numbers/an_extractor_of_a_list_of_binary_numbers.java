@@ -89,6 +89,8 @@ public class an_extractor_of_a_list_of_binary_numbers {
         	
         	The_Binary_Number = The_Buffered_Reader.readLine();
         	
+        	this.checks_the_characters_of(The_Binary_Number);
+        	
         	this.Number_Of_Bits_In_A_Binary_Number = The_Binary_Number.length();
         	
         }
