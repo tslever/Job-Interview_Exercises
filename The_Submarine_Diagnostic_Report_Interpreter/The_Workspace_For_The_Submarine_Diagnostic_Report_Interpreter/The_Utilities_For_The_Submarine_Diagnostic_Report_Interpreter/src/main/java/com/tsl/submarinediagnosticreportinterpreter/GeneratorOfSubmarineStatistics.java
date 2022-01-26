@@ -65,14 +65,22 @@ class GeneratorOfSubmarineStatistics {
         return new int[] {frequencyOf0s, frequencyOf1s};
     }
     
-    private double providesSubmarinesCarbonDioxideScrubberRating() {
+    private double providesGasRating(Gas gasToUse) {
         ArrayList<String> binaryNumbers = this.binaryNumbers;
         for (int i = 0; i < this.bitsInABinaryNumber; i++) {
             int[] frequencyOf0sAndFrequencyOf1s = this.providesFrequencyOf0sAndFrequencyOf1sGiven(binaryNumbers, i);
-            char leastCommonBit = (frequencyOf0sAndFrequencyOf1s[1] < frequencyOf0sAndFrequencyOf1s[0]) ? '1' : '0';
+            char significantBit = '\0';
+            switch (gasToUse) {
+            	case CARBON_DIOXIDE:
+            		significantBit = (frequencyOf0sAndFrequencyOf1s[1] < frequencyOf0sAndFrequencyOf1s[0]) ? '1' : '0';
+            		break;
+            	case OXYGEN:
+            		significantBit = (frequencyOf0sAndFrequencyOf1s[1] >= frequencyOf0sAndFrequencyOf1s[0]) ? '1' : '0';
+            		break;
+            }
             ArrayList<String> winnowedBinaryNumbers = new ArrayList<String>();
             for (String binaryNumber : binaryNumbers) {
-                if (binaryNumber.charAt(i) == leastCommonBit) {
+                if (binaryNumber.charAt(i) == significantBit) {
                     winnowedBinaryNumbers.add(binaryNumber);
                 }
             }
@@ -85,6 +93,10 @@ class GeneratorOfSubmarineStatistics {
             this.providesListContainingFirstBinaryNumberIn(binaryNumbers);
         }
         return this.convertsToDouble(this.parsesAsRating(binaryNumbers.get(0)));
+    }
+    
+    private double providesSubmarinesCarbonDioxideScrubberRating() {
+        return this.providesGasRating(Gas.CARBON_DIOXIDE);
     }
     
     private double providesSubmarinesEpsilonRate() {
@@ -110,25 +122,7 @@ class GeneratorOfSubmarineStatistics {
     }
     
     private double providesSubmarinesOxygenGeneratorRating() {
-        ArrayList<String> binaryNumbers = this.binaryNumbers;
-        for (int i = 0; i < this.bitsInABinaryNumber; i++) {
-            int[] frequencyOf0sAndFrequencyOf1s = this.providesFrequencyOf0sAndFrequencyOf1sGiven(binaryNumbers, i);
-            char mostCommonBit = (frequencyOf0sAndFrequencyOf1s[1] >= frequencyOf0sAndFrequencyOf1s[0]) ? '1' : '0';
-            ArrayList<String> winnowedBinaryNumbers = new ArrayList<String>();
-            for (String binaryNumber : binaryNumbers) {
-                if (binaryNumber.charAt(i) == mostCommonBit) {
-                    winnowedBinaryNumbers.add(binaryNumber);
-                }
-            }
-            binaryNumbers = this.providesUpdatedListOfBinaryNumbersBasedOn(binaryNumbers, winnowedBinaryNumbers);
-            if (binaryNumbers.size() < 2) {
-                break;
-            }
-        }
-        if (binaryNumbers.size() > 1) {
-            this.providesListContainingFirstBinaryNumberIn(binaryNumbers);
-        }
-        return this.convertsToDouble(this.parsesAsRating(binaryNumbers.get(0)));
+        return this.providesGasRating(Gas.OXYGEN);
     }
     
     double providesSubmarinesPowerConsumption() {
