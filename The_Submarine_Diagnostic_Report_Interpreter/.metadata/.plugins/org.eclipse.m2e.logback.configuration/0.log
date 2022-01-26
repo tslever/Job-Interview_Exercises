@@ -1,1 +1,22 @@
 2022-01-04 10:22:26,791 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-01-26 16:02:45,663 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-01-26 16:03:04,637 [Worker-199: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Com.TSL:The_Utilities_For_The_Submarine_Diagnostic_Report_Interpreter:0.0.1-SNAPSHOT @ /Users/tlever/GitHub/Job-Interview_Exercises/The_Submarine_Diagnostic_Report_Interpreter/submarinediagnosticreportinterpreter/pom.xml.
+2022-01-26 16:03:05,540 [Worker-199: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /submarinediagnosticreportinterpreter/src/main/java
+2022-01-26 16:03:05,541 [Worker-199: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /submarinediagnosticreportinterpreter/src/test/java
+2022-01-26 16:03:05,974 [Worker-199: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 3 sec
+2022-01-26 16:03:11,424 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-01-26 16:03:11,425 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/tlever/GitHub/Job-Interview_Exercises/The_Submarine_Diagnostic_Report_Interpreter/submarinediagnosticreportinterpreter/src/main/resources
+2022-01-26 16:03:11,428 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-01-26 16:03:11,428 [Worker-188: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/tlever/GitHub/Job-Interview_Exercises/The_Submarine_Diagnostic_Report_Interpreter/submarinediagnosticreportinterpreter/src/test/resources
+2022-01-26 16:03:49,029 [Worker-147: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-01-26 16:03:49,030 [Worker-147: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/tlever/GitHub/Job-Interview_Exercises/The_Submarine_Diagnostic_Report_Interpreter/submarinediagnosticreportinterpreter/src/main/resources
+2022-01-26 16:03:49,031 [Worker-147: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-01-26 16:03:49,031 [Worker-147: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/tlever/GitHub/Job-Interview_Exercises/The_Submarine_Diagnostic_Report_Interpreter/submarinediagnosticreportinterpreter/src/test/resources
+2022-01-26 16:04:00,360 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-01-26 16:04:00,360 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/tlever/GitHub/Job-Interview_Exercises/The_Submarine_Diagnostic_Report_Interpreter/submarinediagnosticreportinterpreter/src/main/resources
+2022-01-26 16:04:00,361 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-01-26 16:04:00,362 [Worker-195: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/tlever/GitHub/Job-Interview_Exercises/The_Submarine_Diagnostic_Report_Interpreter/submarinediagnosticreportinterpreter/src/test/resources
+2022-01-26 16:04:10,676 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-01-26 16:04:10,676 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/tlever/GitHub/Job-Interview_Exercises/The_Submarine_Diagnostic_Report_Interpreter/submarinediagnosticreportinterpreter/src/main/resources
+2022-01-26 16:04:10,678 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-01-26 16:04:10,678 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/tlever/GitHub/Job-Interview_Exercises/The_Submarine_Diagnostic_Report_Interpreter/submarinediagnosticreportinterpreter/src/test/resources
