@@ -17,18 +17,18 @@ import java.util.ArrayList;
 public class SubmarineDiagnosticReportInterpreter {
     
     public static void main(String[] args)
-    	throws ZeroBinaryNumbersException, InconsistentNumberOfBitsException, InvalidCharacterException, IOException {
+        throws InconsistentNumberOfBitsException, InvalidCharacterException, IOException, ZeroBinaryNumbersException {
         String pathToDiagnosticReport = args[0];
         ArrayList<String> binaryNumbers =
-        	(new ExtractorOfBinaryNumbers()).extractsBinaryNumbersFromDiagnosticReportAt(pathToDiagnosticReport);
+            (new ExtractorOfBinaryNumbers()).extractsBinaryNumbersFromDiagnosticReportAt(pathToDiagnosticReport);
         GeneratorOfSubmarineStatistics generatorOfSubmarineStatistics = new GeneratorOfSubmarineStatistics(binaryNumbers);
         System.out.printf(
-        	"The power consumption of the submarine corresponding to the diagnostic report at\n\""
-        	+ pathToDiagnosticReport + "\"\nis %.0f.\n\n",
-        	generatorOfSubmarineStatistics.providesSubmarinesPowerConsumption());
+            "The power consumption of the submarine corresponding to the diagnostic report at\n\""
+            + pathToDiagnosticReport + "\"\nis %.0f.\n\n",
+            generatorOfSubmarineStatistics.providesSubmarinesPowerConsumption());
         System.out.printf(
-        	"The life-support rating of the submarine corresponding to the diagnostic report at\n\""
-        	+ pathToDiagnosticReport + "\"\nis %.0f.", generatorOfSubmarineStatistics.providesSubmarinesLifeSupportRating());
+            "The life-support rating of the submarine corresponding to the diagnostic report at\n\""
+            + pathToDiagnosticReport + "\"\nis %.0f.", generatorOfSubmarineStatistics.providesSubmarinesLifeSupportRating());
         
     }
 }
