@@ -1,4 +1,4 @@
-package Com.TSL.The_Utilities_For_The_Submarine_Diagnostic_Report_Interpreter.The_Utilities_For_An_Extractor_Of_A_List_Of_Binary_Numbers;
+package com.tsl.utilitiesforsubmarinediagnosticreportinterpreter.The_Utilities_For_An_Extractor_Of_A_List_Of_Binary_Numbers;
 
 
 import java.io.BufferedReader;

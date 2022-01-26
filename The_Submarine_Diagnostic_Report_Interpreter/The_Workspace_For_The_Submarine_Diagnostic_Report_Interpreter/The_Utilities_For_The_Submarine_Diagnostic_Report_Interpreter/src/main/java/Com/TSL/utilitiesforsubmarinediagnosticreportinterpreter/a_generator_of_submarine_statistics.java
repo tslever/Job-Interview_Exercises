@@ -1,8 +1,7 @@
-package Com.TSL.The_Utilities_For_The_Submarine_Diagnostic_Report_Interpreter;
+package com.tsl.utilitiesforsubmarinediagnosticreportinterpreter;
 
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 
 /**
