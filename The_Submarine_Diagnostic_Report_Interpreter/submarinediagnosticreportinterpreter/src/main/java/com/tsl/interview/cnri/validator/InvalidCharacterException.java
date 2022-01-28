@@ -5,7 +5,7 @@
  * since 01/26/22
  */
 
-package com.tsl.submarinediagnosticreportinterpreter.extractorofbinarynumbers;
+package com.tsl.interview.cnri.validator;
 
 public class InvalidCharacterException extends Exception {
 
